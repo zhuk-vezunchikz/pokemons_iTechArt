@@ -11,7 +11,8 @@ section {
       padding-right: 10px; }
   section button {
     margin-top: 5px;
-    width: 100px; }
+    width: 100px;
+    height: 40px; }
   section .items {
     display: grid;
     grid-template-columns: repeat(10, 1fr); }

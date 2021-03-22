@@ -35,12 +35,11 @@ const MainPage = () => {
             </div>
             <div className={style.pockemons}>
                 {pockemons.map(item => {
-                    return <div key={item.id} className={style.pockemon}>
-                        <Link to='/description'
+                    return <Link key={item.id}
+                            to='/description'
                               id={item.id}
                               onClick={choosePockemon}
-                              className={style.link}>{item.name}</Link>
-                    </div>
+                              className={style.pockemon}>{item.name}</Link>
                 })}
             </div>
         </div>

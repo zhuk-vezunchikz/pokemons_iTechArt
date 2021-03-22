@@ -2,7 +2,7 @@ import React from 'react';
 import {useSelector} from "react-redux";
 import style from './table.module.css';
 
-const Table = (props) => {
+const Table = () => {
     const targetPockemon = useSelector(state => state.targetPockemon)
     const onMainPage = () => {
         window.location.replace('/');
@@ -72,8 +72,7 @@ const Table = (props) => {
                     })}
                 </div>
             </div>
-
-            <button onClick={onMainPage}>Назад</button>
+            <button onClick={onMainPage}><b>Назад</b></button>
         </section>
     )
 }
