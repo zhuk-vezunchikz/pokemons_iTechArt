@@ -1,5 +1,6 @@
 @import 'pages/MainPage/MainPage.module.css';
 @import 'pages/Description/Description.module.css';
+@import 'components/table.module.css';
 
 body {
     background-color: black;

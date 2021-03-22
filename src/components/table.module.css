@@ -1,0 +1,19 @@
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 100px; }
+  section .row {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid yellow;
+    padding: 10px; }
+    section .row .leftItem {
+      padding-right: 10px; }
+  section button {
+    margin-top: 5px;
+    width: 100px; }
+  section .items {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); }
+
+/*# sourceMappingURL=table.module.css.map */
