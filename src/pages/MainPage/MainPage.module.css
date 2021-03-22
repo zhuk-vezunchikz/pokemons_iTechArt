@@ -1,0 +1,21 @@
+.pockemons {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); }
+  .pockemons div {
+    margin: 10px;
+    padding: 10px; }
+  .pockemons .pockemon {
+    text-align: center;
+    border: 1px solid; }
+    .pockemons .pockemon:hover {
+      background-color: yellow;
+      border-radius: 20px; }
+    .pockemons .pockemon .link {
+      text-decoration: none; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/*# sourceMappingURL=MainPage.module.css.map */
