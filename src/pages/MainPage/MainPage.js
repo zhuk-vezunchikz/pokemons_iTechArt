@@ -7,12 +7,12 @@ import style from './MainPage.module.css';
 
 const MainPage = () => {
 
-    const pockemons = useSelector(state => state.pockemons);
+    const pockHero = useSelector(state => state.pockemons);
     const dispatch = useDispatch();
 
     const choosePockemon = (e) => {
         let targetID = e.target.id;
-        pockemons.forEach((obj) => {
+        pockHero.forEach((obj) => {
             for (let key in obj) {
                 if (+obj[key] === +targetID) {
                     dispatch(targetPockmonUrl(obj.url))
@@ -33,13 +33,13 @@ const MainPage = () => {
             <div>
                 <h1>Список покемонов</h1>
             </div>
-            <div className={style.pockemons}>
-                {pockemons.map(item => {
+            <div className={style.pockHeroes}>
+                {pockHero.map(item => {
                     return <Link key={item.id}
                             to='/description'
                               id={item.id}
                               onClick={choosePockemon}
-                              className={style.pockemon}>{item.name}</Link>
+                              className={style.pock}>{item.name}</Link>
                 })}
             </div>
         </div>

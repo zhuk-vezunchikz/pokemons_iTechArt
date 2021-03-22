@@ -1,20 +1,20 @@
-.pockemons {
+.pockHeroes {
   display: grid;
   grid-template-columns: repeat(10, 1fr); }
-  .pockemons div {
+  .pockHeroes div {
     margin: 10px;
     padding: 10px; }
-  .pockemons .pockemon {
+  .pockHeroes .pock {
     display: block;
     text-decoration: none;
     padding: 10px;
     margin: 10px;
     text-align: center;
     border: 1px solid; }
-    .pockemons .pockemon:hover {
+    .pockHeroes .pock:hover {
       background-color: yellow;
       border-radius: 20px; }
-    .pockemons .pockemon .link {
+    .pockHeroes .pock .link {
       text-decoration: none; }
 
 .container {
